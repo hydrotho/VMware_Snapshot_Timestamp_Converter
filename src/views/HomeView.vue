@@ -1,9 +1,9 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import Converter from '../components/Converter.vue'
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <Converter />
   </main>
 </template>

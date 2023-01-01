@@ -1,18 +1,20 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import Introduction from './components/Introduction.vue'
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <img alt="Vue logo" class="logo" src="@/assets/logo.webp" width="125" height="125" />
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <Introduction />
 
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/">主页</RouterLink>
+        <a href="https://github.com/hydrotho/VMware_Snapshot_Timestamp_Converter">
+          <img alt="GitHub logo" src="@/assets/github.svg" width="25" height="25" />
+        </a>
       </nav>
     </div>
   </header>
@@ -81,5 +83,13 @@ nav a:first-of-type {
     padding: 1rem 0;
     margin-top: 1rem;
   }
+}
+
+nav {
+  margin-bottom: 1rem;
+}
+
+nav a:hover {
+  background-color: transparent
 }
 </style>
