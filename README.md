@@ -1,57 +1,17 @@
 # VMware_Snapshot_Timestamp_Converter
 
-This template should help get you started developing with Vue 3 in Vite.
+> VMware Snapshot Timestamp Converter 是一个用于将 VMware 快照时间戳和人类可读格式相互转换的工具。
 
-## Recommended IDE Setup
+## Introduction
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Welcome to VMware Snapshot Timestamp Converter!
 
-## Customize configuration
+Sometimes, we may encounter problems that cause the timestamp of the created VMware virtual machine snapshot to be incorrect. However, the timestamps on VMware virtual machine snapshots are not in the standard Unix format, making them difficult to directly modify. That's where VMware Snapshot Timestamp Converter comes in!
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+This tool allows you to easily convert the timestamps on VMware virtual machine snapshots between a human-readable format and the actual timestamp used by VMware. Simply input the timestamp you wish to convert and the tool will handle the rest.
 
-## Project Setup
+So if you're tired of dealing with problematic snapshot timestamps, give VMware Snapshot Timestamp Converter a try. It's the perfect solution for anyone looking to easily manage and modify their VMware snapshot timestamps.
 
-```sh
-yarn
-```
+## License
 
-### Compile and Hot-Reload for Development
-
-```sh
-yarn dev
-```
-
-### Compile and Minify for Production
-
-```sh
-yarn build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-yarn test:unit
-```
-
-### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
-
-```sh
-yarn test:e2e:dev
-```
-
-This runs the end-to-end tests against the Vite development server.
-It is much faster than the production build.
-
-But it's still recommended to test the production build with `test:e2e` before deploying (e.g. in CI environments):
-
-```sh
-yarn build
-yarn test:e2e
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-yarn lint
-```
+[GNU GPLv3](https://github.com/hydrotho/VMware_Snapshot_Timestamp_Converter/blob/master/LICENSE)
