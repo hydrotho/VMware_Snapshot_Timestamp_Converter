@@ -10,6 +10,26 @@ const outputTimestamp = computed(() => {
     let timestamp = ((inputCreateTimeHigh.value * 2 ** 32) + (inputCreateTimeLow.value >>> 0)) / 1000
     return timestamp ? new Date(timestamp) : new Date(0)
 })
+watch(inputCreateTimeHigh, (newValue) => {
+    if (newValue.startsWith('-')) {
+        inputCreateTimeHigh.value = '-'
+    } else {
+        inputCreateTimeHigh.value = ''
+    }
+    if (/\d/g.test(newValue)) {
+        inputCreateTimeHigh.value += newValue.match(/\d+/g);
+    }
+})
+watch(inputCreateTimeLow, (newValue) => {
+    if (newValue.startsWith('-')) {
+        inputCreateTimeLow.value = '-'
+    } else {
+        inputCreateTimeLow.value = ''
+    }
+    if (/\d/g.test(newValue)) {
+        inputCreateTimeLow.value += newValue.match(/\d+/g);
+    }
+})
 
 const inputTimestamp = ref()
 const outputCreateTime = reactive({ high: 0, low: 0 })
