@@ -12,6 +12,10 @@ This tool allows you to easily convert the timestamps on VMware virtual machine 
 
 So if you're tired of dealing with problematic snapshot timestamps, give VMware Snapshot Timestamp Converter a try. It's the perfect solution for anyone looking to easily manage and modify their VMware snapshot timestamps.
 
+## Credits
+
+[VMware Snapshot Forensics](https://stuffphilwrites.com/2013/03/vmware-snapshot-forensics)
+
 ## License
 
 [GNU GPLv3](https://github.com/hydrotho/VMware_Snapshot_Timestamp_Converter/blob/master/LICENSE)
