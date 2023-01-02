@@ -1,9 +1,12 @@
+<script setup>
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
+</script>
+
 <template>
   <div class="message">
     <h1 class="green">VMware Snapshot Timestamp Converter</h1>
-    <h3>
-      VMware Snapshot Timestamp Converter 是一个用于将 VMware 快照时间戳和人类可读格式相互转换的工具。
-    </h3>
+    <h3>{{ t('introduction') }}</h3>
   </div>
 </template>
 

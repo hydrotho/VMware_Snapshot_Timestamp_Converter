@@ -4,6 +4,9 @@ import { computed, reactive, ref, watch } from 'vue'
 import Datepicker from '@vuepic/vue-datepicker'
 import '@vuepic/vue-datepicker/dist/main.css'
 
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
+
 const inputCreateTimeHigh = ref()
 const inputCreateTimeLow = ref()
 const outputTimestamp = computed(() => {
@@ -53,7 +56,7 @@ watch(inputTimestamp, () => {
                 <input class="form-control" placeholder="createTimeLow" aria-label="createTimeLow"
                     v-model="inputCreateTimeLow">
             </div>
-            <p>人类可读格式：{{ outputTimestamp.toLocaleString() }}</p>
+            <p>{{ t('human_readable_format') }}{{ outputTimestamp.toLocaleString() }}</p>
         </div>
         <div>
             <div class="mb-3">

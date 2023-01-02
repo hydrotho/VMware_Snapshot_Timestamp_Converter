@@ -44,6 +44,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["vite", "virtual:7303549e7fc592f1fb9fb496e9f7f31b06bc1491e898af9f5c2eecc1381c60e9438f73c9d9628e1f01836a12a4127453509b280561a18d9fcd0aa5d8b48162db#npm:4.0.3"],\
             ["vitest", "virtual:7303549e7fc592f1fb9fb496e9f7f31b06bc1491e898af9f5c2eecc1381c60e9438f73c9d9628e1f01836a12a4127453509b280561a18d9fcd0aa5d8b48162db#npm:0.25.8"],\
             ["vue", "npm:3.2.45"],\
+            ["vue-i18n", "virtual:7303549e7fc592f1fb9fb496e9f7f31b06bc1491e898af9f5c2eecc1381c60e9438f73c9d9628e1f01836a12a4127453509b280561a18d9fcd0aa5d8b48162db#npm:9.2.2"],\
             ["vue-router", "virtual:7303549e7fc592f1fb9fb496e9f7f31b06bc1491e898af9f5c2eecc1381c60e9438f73c9d9628e1f01836a12a4127453509b280561a18d9fcd0aa5d8b48162db#npm:4.1.6"]\
           ],\
           "linkType": "SOFT"\
@@ -406,6 +407,60 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@humanwhocodes-object-schema-npm-1.2.1-eb622b5d0e-a824a1ec31.zip/node_modules/@humanwhocodes/object-schema/",\
           "packageDependencies": [\
             ["@humanwhocodes/object-schema", "npm:1.2.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@intlify/core-base", [\
+        ["npm:9.2.2", {\
+          "packageLocation": "./.yarn/cache/@intlify-core-base-npm-9.2.2-6d32faeecb-51f9c803d3.zip/node_modules/@intlify/core-base/",\
+          "packageDependencies": [\
+            ["@intlify/core-base", "npm:9.2.2"],\
+            ["@intlify/devtools-if", "npm:9.2.2"],\
+            ["@intlify/message-compiler", "npm:9.2.2"],\
+            ["@intlify/shared", "npm:9.2.2"],\
+            ["@intlify/vue-devtools", "npm:9.2.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@intlify/devtools-if", [\
+        ["npm:9.2.2", {\
+          "packageLocation": "./.yarn/cache/@intlify-devtools-if-npm-9.2.2-d168ea4ccc-ac4217b175.zip/node_modules/@intlify/devtools-if/",\
+          "packageDependencies": [\
+            ["@intlify/devtools-if", "npm:9.2.2"],\
+            ["@intlify/shared", "npm:9.2.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@intlify/message-compiler", [\
+        ["npm:9.2.2", {\
+          "packageLocation": "./.yarn/cache/@intlify-message-compiler-npm-9.2.2-f30d806fd0-309384c036.zip/node_modules/@intlify/message-compiler/",\
+          "packageDependencies": [\
+            ["@intlify/message-compiler", "npm:9.2.2"],\
+            ["@intlify/shared", "npm:9.2.2"],\
+            ["source-map", "npm:0.6.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@intlify/shared", [\
+        ["npm:9.2.2", {\
+          "packageLocation": "./.yarn/cache/@intlify-shared-npm-9.2.2-fe8fd82a76-3aad616c66.zip/node_modules/@intlify/shared/",\
+          "packageDependencies": [\
+            ["@intlify/shared", "npm:9.2.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@intlify/vue-devtools", [\
+        ["npm:9.2.2", {\
+          "packageLocation": "./.yarn/cache/@intlify-vue-devtools-npm-9.2.2-b8440324bc-12b7743337.zip/node_modules/@intlify/vue-devtools/",\
+          "packageDependencies": [\
+            ["@intlify/vue-devtools", "npm:9.2.2"],\
+            ["@intlify/core-base", "npm:9.2.2"],\
+            ["@intlify/shared", "npm:9.2.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -4897,6 +4952,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["vite", "virtual:7303549e7fc592f1fb9fb496e9f7f31b06bc1491e898af9f5c2eecc1381c60e9438f73c9d9628e1f01836a12a4127453509b280561a18d9fcd0aa5d8b48162db#npm:4.0.3"],\
             ["vitest", "virtual:7303549e7fc592f1fb9fb496e9f7f31b06bc1491e898af9f5c2eecc1381c60e9438f73c9d9628e1f01836a12a4127453509b280561a18d9fcd0aa5d8b48162db#npm:0.25.8"],\
             ["vue", "npm:3.2.45"],\
+            ["vue-i18n", "virtual:7303549e7fc592f1fb9fb496e9f7f31b06bc1491e898af9f5c2eecc1381c60e9438f73c9d9628e1f01836a12a4127453509b280561a18d9fcd0aa5d8b48162db#npm:9.2.2"],\
             ["vue-router", "virtual:7303549e7fc592f1fb9fb496e9f7f31b06bc1491e898af9f5c2eecc1381c60e9438f73c9d9628e1f01836a12a4127453509b280561a18d9fcd0aa5d8b48162db#npm:4.1.6"]\
           ],\
           "linkType": "SOFT"\
@@ -4941,6 +4997,32 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packagePeers": [\
             "@types/eslint",\
             "eslint"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["vue-i18n", [\
+        ["npm:9.2.2", {\
+          "packageLocation": "./.yarn/cache/vue-i18n-npm-9.2.2-37858edecb-513b82d701.zip/node_modules/vue-i18n/",\
+          "packageDependencies": [\
+            ["vue-i18n", "npm:9.2.2"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:7303549e7fc592f1fb9fb496e9f7f31b06bc1491e898af9f5c2eecc1381c60e9438f73c9d9628e1f01836a12a4127453509b280561a18d9fcd0aa5d8b48162db#npm:9.2.2", {\
+          "packageLocation": "./.yarn/__virtual__/vue-i18n-virtual-4535e47ede/0/cache/vue-i18n-npm-9.2.2-37858edecb-513b82d701.zip/node_modules/vue-i18n/",\
+          "packageDependencies": [\
+            ["vue-i18n", "virtual:7303549e7fc592f1fb9fb496e9f7f31b06bc1491e898af9f5c2eecc1381c60e9438f73c9d9628e1f01836a12a4127453509b280561a18d9fcd0aa5d8b48162db#npm:9.2.2"],\
+            ["@intlify/core-base", "npm:9.2.2"],\
+            ["@intlify/shared", "npm:9.2.2"],\
+            ["@intlify/vue-devtools", "npm:9.2.2"],\
+            ["@types/vue", null],\
+            ["@vue/devtools-api", "npm:6.4.5"],\
+            ["vue", "npm:3.2.45"]\
+          ],\
+          "packagePeers": [\
+            "@types/vue",\
+            "vue"\
           ],\
           "linkType": "HARD"\
         }]\

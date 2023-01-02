@@ -1,6 +1,8 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import Introduction from './components/Introduction.vue'
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
 </script>
 
 <template>
@@ -11,7 +13,7 @@ import Introduction from './components/Introduction.vue'
       <Introduction />
 
       <nav>
-        <RouterLink to="/">主页</RouterLink>
+        <RouterLink to="/">{{ t('home') }}</RouterLink>
         <a href="https://github.com/hydrotho/VMware_Snapshot_Timestamp_Converter">
           <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
             <path
