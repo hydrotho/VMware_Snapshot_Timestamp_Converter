@@ -1,5 +1,6 @@
 <script setup>
-import { computed, reactive, ref, watch } from 'vue'
+import { watch } from 'vue'
+import { $computed, $ref } from 'vue/macros'
 
 import Datepicker from '@vuepic/vue-datepicker'
 import '@vuepic/vue-datepicker/dist/main.css'
@@ -7,37 +8,37 @@ import '@vuepic/vue-datepicker/dist/main.css'
 import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
 
-const inputCreateTimeHigh = ref()
-const inputCreateTimeLow = ref()
-const outputTimestamp = computed(() => {
-    let timestamp = ((inputCreateTimeHigh.value * 2 ** 32) + (inputCreateTimeLow.value >>> 0)) / 1000
+const inputCreateTimeHigh = $ref()
+const inputCreateTimeLow = $ref()
+const outputTimestamp = $computed(() => {
+    let timestamp = ((inputCreateTimeHigh * 2 ** 32) + (inputCreateTimeLow >>> 0)) / 1000
     return timestamp ? new Date(timestamp) : new Date(0)
 })
-watch(inputCreateTimeHigh, (newValue) => {
+watch($$(inputCreateTimeHigh), (newValue) => {
     if (newValue.startsWith('-')) {
-        inputCreateTimeHigh.value = '-'
+        inputCreateTimeHigh = '-'
     } else {
-        inputCreateTimeHigh.value = ''
+        inputCreateTimeHigh = ''
     }
     if (/\d/g.test(newValue)) {
-        inputCreateTimeHigh.value += newValue.match(/\d+/g);
+        inputCreateTimeHigh += newValue.match(/\d+/g);
     }
 })
-watch(inputCreateTimeLow, (newValue) => {
+watch($$(inputCreateTimeLow), (newValue) => {
     if (newValue.startsWith('-')) {
-        inputCreateTimeLow.value = '-'
+        inputCreateTimeLow = '-'
     } else {
-        inputCreateTimeLow.value = ''
+        inputCreateTimeLow = ''
     }
     if (/\d/g.test(newValue)) {
-        inputCreateTimeLow.value += newValue.match(/\d+/g);
+        inputCreateTimeLow += newValue.match(/\d+/g);
     }
 })
 
-const inputTimestamp = ref()
-const outputCreateTime = reactive({ high: 0, low: 0 })
-watch(inputTimestamp, () => {
-    let timestamp = new Date(inputTimestamp.value)
+const inputTimestamp = $ref()
+const outputCreateTime = $ref({ high: 0, low: 0 })
+watch($$(inputTimestamp), () => {
+    let timestamp = new Date(inputTimestamp)
     outputCreateTime.low = timestamp.getTime() * 1000 % 2 ** 32
     outputCreateTime.high = (timestamp.getTime() * 1000 - outputCreateTime.low) / 2 ** 32
 })
