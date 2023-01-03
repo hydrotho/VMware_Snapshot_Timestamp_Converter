@@ -57,14 +57,16 @@ watch($$(inputTimestamp), () => {
                 <input class="form-control" placeholder="createTimeLow" aria-label="createTimeLow"
                     v-model="inputCreateTimeLow">
             </div>
-            <p>{{ t('human_readable_format') }}{{ outputTimestamp.toLocaleString() }}</p>
+            <p :style="{ visibility: inputCreateTimeHigh || inputCreateTimeLow ? 'visible' : 'hidden' }">
+                {{ t('human_readable_format') }}{{ outputTimestamp.toLocaleString() }}
+            </p>
         </div>
         <div>
             <div class="mb-3">
                 <Datepicker v-model="inputTimestamp" enable-seconds />
             </div>
-            <p>createTimeHigh: {{ outputCreateTime.high }}</p>
-            <p>createTimeLow: {{ outputCreateTime.low }}</p>
+            <p v-show="inputTimestamp">createTimeHigh: {{ outputCreateTime.high }}</p>
+            <p v-show="inputTimestamp">createTimeLow: {{ outputCreateTime.low }}</p>
         </div>
     </div>
 </template>
