@@ -61,7 +61,7 @@ watch($$(inputTimestamp), () => {
         </div>
         <div>
             <div class="mb-3">
-                <Datepicker v-model="inputTimestamp" />
+                <Datepicker v-model="inputTimestamp" enable-seconds />
             </div>
             <p>createTimeHigh: {{ outputCreateTime.high }}</p>
             <p>createTimeLow: {{ outputCreateTime.low }}</p>
