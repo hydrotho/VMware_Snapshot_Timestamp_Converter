@@ -28,6 +28,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@popperjs/core", "npm:2.11.6"],\
             ["@rushstack/eslint-patch", "npm:1.2.0"],\
             ["@vitejs/plugin-vue", "virtual:7303549e7fc592f1fb9fb496e9f7f31b06bc1491e898af9f5c2eecc1381c60e9438f73c9d9628e1f01836a12a4127453509b280561a18d9fcd0aa5d8b48162db#npm:4.0.0"],\
             ["@vue/eslint-config-prettier", "virtual:7303549e7fc592f1fb9fb496e9f7f31b06bc1491e898af9f5c2eecc1381c60e9438f73c9d9628e1f01836a12a4127453509b280561a18d9fcd0aa5d8b48162db#npm:7.0.0"],\
@@ -514,6 +515,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@npmcli/move-file", "npm:2.0.1"],\
             ["mkdirp", "npm:1.0.4"],\
             ["rimraf", "npm:3.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@popperjs/core", [\
+        ["npm:2.11.6", {\
+          "packageLocation": "./.yarn/cache/@popperjs-core-npm-2.11.6-5bcdc104bd-47fb328cec.zip/node_modules/@popperjs/core/",\
+          "packageDependencies": [\
+            ["@popperjs/core", "npm:2.11.6"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -1229,7 +1239,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/__virtual__/bootstrap-virtual-08b7be9dc7/0/cache/bootstrap-npm-5.2.3-7458283a23-0211805dec.zip/node_modules/bootstrap/",\
           "packageDependencies": [\
             ["bootstrap", "virtual:7303549e7fc592f1fb9fb496e9f7f31b06bc1491e898af9f5c2eecc1381c60e9438f73c9d9628e1f01836a12a4127453509b280561a18d9fcd0aa5d8b48162db#npm:5.2.3"],\
-            ["@popperjs/core", null],\
+            ["@popperjs/core", "npm:2.11.6"],\
             ["@types/popperjs__core", null]\
           ],\
           "packagePeers": [\
@@ -4936,6 +4946,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["vmware-snapshot-timestamp-converter", "workspace:."],\
+            ["@popperjs/core", "npm:2.11.6"],\
             ["@rushstack/eslint-patch", "npm:1.2.0"],\
             ["@vitejs/plugin-vue", "virtual:7303549e7fc592f1fb9fb496e9f7f31b06bc1491e898af9f5c2eecc1381c60e9438f73c9d9628e1f01836a12a4127453509b280561a18d9fcd0aa5d8b48162db#npm:4.0.0"],\
             ["@vue/eslint-config-prettier", "virtual:7303549e7fc592f1fb9fb496e9f7f31b06bc1491e898af9f5c2eecc1381c60e9438f73c9d9628e1f01836a12a4127453509b280561a18d9fcd0aa5d8b48162db#npm:7.0.0"],\
