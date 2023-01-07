@@ -847,6 +847,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@vue/test-utils", "virtual:7303549e7fc592f1fb9fb496e9f7f31b06bc1491e898af9f5c2eecc1381c60e9438f73c9d9628e1f01836a12a4127453509b280561a18d9fcd0aa5d8b48162db#npm:2.2.6"],\
             ["@types/vue", null],\
+            ["@vue/compiler-dom", "npm:3.2.45"],\
             ["vue", "npm:3.2.45"]\
           ],\
           "packagePeers": [\
@@ -4501,6 +4502,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["has-flag", "npm:4.0.0"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:9.3.1", {\
+          "packageLocation": "./.yarn/cache/supports-color-npm-9.3.1-08866b3304-00c4d1082a.zip/node_modules/supports-color/",\
+          "packageDependencies": [\
+            ["supports-color", "npm:9.3.1"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["supports-preserve-symlinks-flag", [\
@@ -4835,6 +4843,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["sass", null],\
             ["stylus", null],\
             ["sugarss", null],\
+            ["supports-color", "npm:9.3.1"],\
             ["terser", null]\
           ],\
           "packagePeers": [\
@@ -4871,6 +4880,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["sass", null],\
             ["stylus", null],\
             ["sugarss", null],\
+            ["supports-color", "npm:9.3.1"],\
             ["terser", null]\
           ],\
           "packagePeers": [\

@@ -5,9 +5,6 @@ import { $computed, $ref } from 'vue/macros'
 import Datepicker from '@vuepic/vue-datepicker'
 import '@vuepic/vue-datepicker/dist/main.css'
 
-import { useI18n } from 'vue-i18n'
-const { t } = useI18n()
-
 const inputCreateTimeHigh = $ref()
 const inputCreateTimeLow = $ref()
 const outputTimestamp = $computed(() => {
@@ -58,12 +55,12 @@ watch($$(inputTimestamp), () => {
                     v-model="inputCreateTimeLow">
             </div>
             <p :style="{ visibility: inputCreateTimeHigh || inputCreateTimeLow ? 'visible' : 'hidden' }">
-                {{ t('human_readable_format') }}{{ outputTimestamp.toLocaleString() }}
+                {{ $t('human_readable_format') }}{{ outputTimestamp.toLocaleString() }}
             </p>
         </div>
         <div>
             <div class="mb-3">
-                <Datepicker v-model="inputTimestamp" enable-seconds />
+                <Datepicker ref="datepicker" v-model="inputTimestamp" enable-seconds />
             </div>
             <p v-show="inputTimestamp">createTimeHigh: {{ outputCreateTime.high }}</p>
             <p v-show="inputTimestamp">createTimeLow: {{ outputCreateTime.low }}</p>
