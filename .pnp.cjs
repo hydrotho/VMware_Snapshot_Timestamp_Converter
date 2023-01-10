@@ -651,6 +651,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@vitejs/plugin-vue", "virtual:7303549e7fc592f1fb9fb496e9f7f31b06bc1491e898af9f5c2eecc1381c60e9438f73c9d9628e1f01836a12a4127453509b280561a18d9fcd0aa5d8b48162db#npm:4.0.0"],\
             ["@types/vite", null],\
             ["@types/vue", null],\
+            ["supports-color", "npm:9.3.1"],\
             ["vite", "virtual:7303549e7fc592f1fb9fb496e9f7f31b06bc1491e898af9f5c2eecc1381c60e9438f73c9d9628e1f01836a12a4127453509b280561a18d9fcd0aa5d8b48162db#npm:4.0.3"],\
             ["vue", "npm:3.2.45"]\
           ],\
@@ -848,6 +849,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@vue/test-utils", "virtual:7303549e7fc592f1fb9fb496e9f7f31b06bc1491e898af9f5c2eecc1381c60e9438f73c9d9628e1f01836a12a4127453509b280561a18d9fcd0aa5d8b48162db#npm:2.2.6"],\
             ["@types/vue", null],\
             ["@vue/compiler-dom", "npm:3.2.45"],\
+            ["supports-color", "npm:9.3.1"],\
             ["vue", "npm:3.2.45"]\
           ],\
           "packagePeers": [\
@@ -1729,11 +1731,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["debug", "virtual:396a3691f7b25accf085fe2fff1f56eb7540eff3f2e928a7572ca1de9b831ff8f22136404f236aaed35d90369918dfc34392844d0f822a310563f34746dfb015#npm:3.2.7"],\
             ["@types/supports-color", null],\
             ["ms", "npm:2.1.3"],\
-            ["supports-color", null]\
+            ["supports-color", "npm:9.3.1"]\
           ],\
           "packagePeers": [\
-            "@types/supports-color",\
-            "supports-color"\
+            "@types/supports-color"\
           ],\
           "linkType": "HARD"\
         }],\
@@ -1757,11 +1758,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["debug", "virtual:92a28e392bb7746809827b7e8ebf6aec49c5f04125481214ae6ea6f4de204344bcccbe5eb3a2f4388bb368cfa5d84f03ce0d8f32a9fcc3f5e92ea34723da1c56#npm:4.3.4"],\
             ["@types/supports-color", null],\
             ["ms", "npm:2.1.2"],\
-            ["supports-color", null]\
+            ["supports-color", "npm:9.3.1"]\
           ],\
           "packagePeers": [\
-            "@types/supports-color",\
-            "supports-color"\
+            "@types/supports-color"\
           ],\
           "linkType": "HARD"\
         }]\
