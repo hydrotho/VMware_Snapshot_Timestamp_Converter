@@ -1,5 +1,5 @@
 {
-    "home": "Home",
-    "introduction": "VMware Snapshot Timestamp Converter is a tool that converts VMware snapshot timestamp into a human-readable format and vice versa.",
-    "human_readable_format": "Human-readable format: "
+  "home": "Home",
+  "introduction": "VMware Snapshot Timestamp Converter is a tool that converts VMware snapshot timestamp into a human-readable format and vice versa.",
+  "human_readable_format": "Human-readable format: "
 }
