@@ -20,6 +20,7 @@
     "vue-router": "^4.2.5"
   },
   "devDependencies": {
+    "@intlify/unplugin-vue-i18n": "^1.5.0",
     "@rushstack/eslint-patch": "^1.6.0",
     "@vitejs/plugin-vue": "^4.5.2",
     "@vue/eslint-config-prettier": "^8.0.0",
@@ -27,10 +28,10 @@
     "eslint": "^8.55.0",
     "eslint-plugin-vue": "^9.19.2",
     "jsdom": "^23.0.1",
-    "prettier": "^3.1.0",
+    "prettier": "^3.1.1",
     "sass": "^1.69.5",
     "vite": "^5.0.7",
-    "vitest": "^1.0.2"
+    "vitest": "^1.0.4"
   },
-  "packageManager": "pnpm@8.11.0"
+  "packageManager": "pnpm@8.12.0"
 }

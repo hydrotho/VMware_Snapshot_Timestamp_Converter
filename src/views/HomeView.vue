@@ -1,9 +1,9 @@
 <script setup>
-import Converter from '../components/Converter.vue'
+import TheConverter from '../components/TheConverter.vue'
 </script>
 
 <template>
   <main>
-    <Converter />
+    <TheConverter />
   </main>
 </template>
