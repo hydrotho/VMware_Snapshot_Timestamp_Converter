@@ -1,5 +1,8 @@
+import { describe, it, expect } from 'vitest'
+
 import { mount } from '@vue/test-utils'
 import TheConverter from '../TheConverter.vue'
+
 import i18n from '@/i18n'
 
 describe('TheConverter', () => {

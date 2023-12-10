@@ -2,9 +2,9 @@
 import { computed, inject, ref, watch } from 'vue'
 import VueDatePicker from '@vuepic/vue-datepicker'
 import '@vuepic/vue-datepicker/dist/main.css'
-import { useI18n } from "vue-i18n";
+import { useI18n } from 'vue-i18n'
 
-const { t } = useI18n();
+const { t } = useI18n()
 
 const isDarkMode = inject('isDarkMode')
 
@@ -61,13 +61,18 @@ const outputCreateTime = computed(() => {
       />
     </div>
     <p :style="{ visibility: inputCreateTimeHigh || inputCreateTimeLow ? 'visible' : 'hidden' }">
-      {{ t("human_readable_format") }}{{ outputTimestamp.toLocaleString() }}
+      {{ t('human_readable_format') }}{{ outputTimestamp.toLocaleString() }}
     </p>
   </div>
   <!-- Date to Timestamp -->
   <div>
     <div class="mb-4">
-      <VueDatePicker ref="vueDatePicker" v-model="inputTimestamp" enable-seconds :dark="isDarkMode" />
+      <VueDatePicker
+        ref="vueDatePicker"
+        v-model="inputTimestamp"
+        enable-seconds
+        :dark="isDarkMode"
+      />
     </div>
     <p v-show="inputTimestamp">createTimeHigh: {{ outputCreateTime.high }}</p>
     <p v-show="inputTimestamp">createTimeLow: {{ outputCreateTime.low }}</p>

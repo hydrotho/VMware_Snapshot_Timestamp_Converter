@@ -2,9 +2,9 @@
 import { onMounted, provide, ref, watchEffect } from 'vue'
 import { RouterLink, RouterView } from 'vue-router'
 import TheIntroduction from './components/TheIntroduction.vue'
-import { useI18n } from "vue-i18n";
+import { useI18n } from 'vue-i18n'
 
-const { t } = useI18n();
+const { t } = useI18n()
 
 const isDarkMode = ref(window.matchMedia('(prefers-color-scheme: dark)').matches)
 
