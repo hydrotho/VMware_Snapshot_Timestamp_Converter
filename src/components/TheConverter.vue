@@ -75,6 +75,6 @@ const outputCreateTime = computed(() => {
       />
     </div>
     <p v-show="inputTimestamp">createTimeHigh: {{ outputCreateTime.high }}</p>
-    <p v-show="inputTimestamp">createTimeLow: {{ outputCreateTime.low }}</p>
+    <p v-show="inputTimestamp">createTimeLow: &nbsp;{{ outputCreateTime.low }}</p>
   </div>
 </template>
