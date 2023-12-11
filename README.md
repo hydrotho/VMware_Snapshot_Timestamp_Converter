@@ -1,16 +1,10 @@
-# VMware_Snapshot_Timestamp_Converter
+# VMware_Snapshot_Timestamp_Converter ![Deploy VMware Snapshot Timestamp Converter to Pages Status](https://github.com/hydrotho/VMware_Snapshot_Timestamp_Converter/actions/workflows/deploy.yml/badge.svg)
 
-> VMware Snapshot Timestamp Converter 是一个用于将 VMware 快照时间戳和人类可读格式相互转换的工具。
+VMware Snapshot Timestamp Converter is a tool that converts VMware snapshot timestamp into a human-readable format and vice versa.
 
-## Introduction
+## Motivation
 
-Welcome to VMware Snapshot Timestamp Converter!
-
-Sometimes, we may encounter problems that cause the timestamp of the created VMware virtual machine snapshot to be incorrect. However, the timestamps on VMware virtual machine snapshots are not in the standard Unix format, making them difficult to directly modify. That's where VMware Snapshot Timestamp Converter comes in!
-
-This tool allows you to easily convert the timestamps on VMware virtual machine snapshots between a human-readable format and the actual timestamp used by VMware. Simply input the timestamp you wish to convert and the tool will handle the rest.
-
-So if you're tired of dealing with problematic snapshot timestamps, give VMware Snapshot Timestamp Converter a try. It's the perfect solution for anyone looking to easily manage and modify their VMware snapshot timestamps.
+The VMware Snapshot Timestamp Converter is designed to solve a specific problem in VMware virtual machine snapshot management: converting non-standard snapshot timestamps into a readable format. Often, these timestamps are in a format not easily understood or modified, leading to challenges in tracking and troubleshooting. This tool simplifies the process, enabling users to quickly convert and correct timestamps, thereby improving the efficiency and accuracy of virtual machine snapshot management.
 
 ## Quick Start
 
@@ -22,11 +16,11 @@ The timestamp of `2000/01/01 0:00:00` in the above picture is clearly a wrong ti
 
 Simply select the time you actually want and the converter will automatically display the `createTimeHigh` and `createTimeLow` values.
 
-![image](https://user-images.githubusercontent.com/42911474/211142422-b834c3d6-e88b-4469-b38e-b0e6b6f9edc6.png)
+![image](https://github.com/hydrotho/VMware_Snapshot_Timestamp_Converter/assets/42911474/78f58385-a465-4f1b-aab1-36410921a0ba)
 
 To fix the timestamp, open the `.vmsd` file in the virtual machine directory and change the `snapshot*.createTimeHigh` and `snapshot*.createTimeLow` values to the ones calculated by VMware Snapshot Timestamp Converter.
 
-![image](https://user-images.githubusercontent.com/42911474/211142477-e7acd9d5-cfbc-474f-8db1-12353925a6be.png)
+![image](https://github.com/hydrotho/VMware_Snapshot_Timestamp_Converter/assets/42911474/1137fd93-c22b-4fae-b052-ccf8a8ddf3e3)
 
 Save the file and reopen VMware Workstation to see that the timestamp has been successfully modified.
 
@@ -38,4 +32,4 @@ Save the file and reopen VMware Workstation to see that the timestamp has been s
 
 ## License
 
-[GNU GPLv3](https://github.com/hydrotho/VMware_Snapshot_Timestamp_Converter/blob/master/LICENSE)
+This project is licensed under the MIT License, see the [LICENSE](LICENSE) file for details.
