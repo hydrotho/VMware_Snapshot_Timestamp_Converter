@@ -40,6 +40,7 @@ const outputCreateTime = computed(() => {
 </script>
 
 <template>
+  <div id="root">
   <!-- Timestamp to Date -->
   <div>
     <div class="input-group mb-3">
@@ -76,5 +77,18 @@ const outputCreateTime = computed(() => {
     </div>
     <p v-show="inputTimestamp">createTimeHigh: {{ outputCreateTime.high }}</p>
     <p v-show="inputTimestamp">createTimeLow: &nbsp;{{ outputCreateTime.low }}</p>
+    </div>
   </div>
 </template>
+
+<style scoped>
+#root {
+  margin-top: 2rem;
+}
+
+@media (min-width: 1024px) {
+  #root {
+    margin-top: 2.6rem;
+  }
+}
+</style>
