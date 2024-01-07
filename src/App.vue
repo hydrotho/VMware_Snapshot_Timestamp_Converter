@@ -29,7 +29,13 @@ onMounted(() => {
 
 <template>
   <header>
-    <img alt="Author avatar" class="logo" src="https://avatars.githubusercontent.com/u/42911474" width="125" height="125" />
+    <img
+      alt="Author avatar"
+      class="logo"
+      src="https://avatars.githubusercontent.com/u/42911474"
+      width="125"
+      height="125"
+    />
 
     <div class="wrapper">
       <TheIntroduction />

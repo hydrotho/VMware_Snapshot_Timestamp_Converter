@@ -45,21 +45,11 @@ const outputCreateTime = computed(() => {
   <div>
     <div class="input-group mb-3">
       <span class="input-group-text">createTimeHigh</span>
-      <input
-        class="form-control"
-        placeholder="createTimeHigh"
-        aria-label="createTimeHigh"
-        v-model="inputCreateTimeHigh"
-      />
+        <input class="form-control" aria-label="createTimeHigh" v-model="inputCreateTimeHigh" />
     </div>
     <div class="input-group mb-3">
       <span class="input-group-text">createTimeLow&nbsp;</span>
-      <input
-        class="form-control"
-        placeholder="createTimeLow"
-        aria-label="createTimeLow"
-        v-model="inputCreateTimeLow"
-      />
+        <input class="form-control" aria-label="createTimeLow" v-model="inputCreateTimeLow" />
     </div>
     <p :style="{ visibility: inputCreateTimeHigh || inputCreateTimeLow ? 'visible' : 'hidden' }">
       {{ t('human_readable_format') }}{{ outputTimestamp.toLocaleString() }}
