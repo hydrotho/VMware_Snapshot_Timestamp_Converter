@@ -1,7 +1,7 @@
 <script setup>
 import { computed, inject, ref, watch } from 'vue'
 import VueDatePicker from '@vuepic/vue-datepicker'
-import '@vuepic/vue-datepicker/dist/main.css'
+import '@/assets/vue-datepicker.scss'
 import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
@@ -41,32 +41,32 @@ const outputCreateTime = computed(() => {
 
 <template>
   <div id="root">
-  <!-- Timestamp to Date -->
-  <div>
-    <div class="input-group mb-3">
-      <span class="input-group-text">createTimeHigh</span>
+    <!-- Timestamp to Date -->
+    <div>
+      <div class="input-group mb-3">
+        <span class="input-group-text">createTimeHigh</span>
         <input class="form-control" aria-label="createTimeHigh" v-model="inputCreateTimeHigh" />
-    </div>
-    <div class="input-group mb-3">
-      <span class="input-group-text">createTimeLow&nbsp;</span>
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text">createTimeLow&nbsp;</span>
         <input class="form-control" aria-label="createTimeLow" v-model="inputCreateTimeLow" />
+      </div>
+      <p :style="{ visibility: inputCreateTimeHigh || inputCreateTimeLow ? 'visible' : 'hidden' }">
+        {{ t('human_readable_format') }}{{ outputTimestamp.toLocaleString() }}
+      </p>
     </div>
-    <p :style="{ visibility: inputCreateTimeHigh || inputCreateTimeLow ? 'visible' : 'hidden' }">
-      {{ t('human_readable_format') }}{{ outputTimestamp.toLocaleString() }}
-    </p>
-  </div>
-  <!-- Date to Timestamp -->
-  <div>
-    <div class="mb-4">
-      <VueDatePicker
-        ref="vueDatePicker"
-        v-model="inputTimestamp"
-        enable-seconds
-        :dark="isDarkMode"
-      />
-    </div>
-    <p v-show="inputTimestamp">createTimeHigh: {{ outputCreateTime.high }}</p>
-    <p v-show="inputTimestamp">createTimeLow: &nbsp;{{ outputCreateTime.low }}</p>
+    <!-- Date to Timestamp -->
+    <div>
+      <div class="mb-4">
+        <VueDatePicker
+          ref="vueDatePicker"
+          v-model="inputTimestamp"
+          enable-seconds
+          :dark="isDarkMode"
+        />
+      </div>
+      <p v-show="inputTimestamp">createTimeHigh: {{ outputCreateTime.high }}</p>
+      <p v-show="inputTimestamp">createTimeLow: &nbsp;{{ outputCreateTime.low }}</p>
     </div>
   </div>
 </template>

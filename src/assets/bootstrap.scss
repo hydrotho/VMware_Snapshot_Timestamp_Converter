@@ -1,0 +1,11 @@
+$body-color: #2c3e50; // --color-heading | --vt-c-text-light-1 | --vt-c-indigo
+$body-bg: #ffffff; // --color-background | --vt-c-white
+$body-tertiary-bg: #f2f2f2; // --color-background-mute | --vt-c-white-mute
+$border-color: rgba(60, 60, 60, 0.12); // --color-border | --vt-c-divider-light-2
+
+$body-color-dark: #ffffff; // --color-heading | --vt-c-text-dark-1 | --vt-c-white
+$body-bg-dark: #181818; // --color-background | --vt-c-black
+$body-tertiary-bg-dark: #282828; // --color-background-mute | --vt-c-black-mute
+$border-color-dark: rgba(84, 84, 84, 0.48); // --color-border | --vt-c-divider-dark-2
+
+@import 'bootstrap/scss/bootstrap';

@@ -88,7 +88,7 @@ nav {
 }
 
 nav a.router-link-exact-active {
-  color: var(--color-text);
+  color: var(--color-heading);
 }
 
 nav a.router-link-exact-active:hover {
@@ -137,7 +137,7 @@ nav a:first-of-type {
 }
 
 .social-icon {
-  color: var(--color-text);
+  color: var(--color-heading);
 }
 
 .social-icon {

@@ -1,0 +1,17 @@
+@import '@vuepic/vue-datepicker/dist/main.css';
+
+.dp__theme_light {
+  --dp-background-color: #ffffff; // --color-background | --vt-c-white
+  --dp-text-color: #2c3e50; // --color-heading | --vt-c-text-light-1 | --vt-c-indigo
+  --dp-border-color: rgba(60, 60, 60, 0.12); // --color-border | --vt-c-divider-light-2
+  --dp-menu-border-color: rgba(60, 60, 60, 0.12); // --color-border | --vt-c-divider-light-2
+  --dp-border-color-hover: rgba(60, 60, 60, 0.29); // --color-border-hover | --vt-c-divider-light-1
+}
+
+.dp__theme_dark {
+  --dp-background-color: #181818; // --color-background | --vt-c-black
+  --dp-text-color: #ffffff; // --color-heading | --vt-c-text-dark-1 | --vt-c-white
+  --dp-border-color: rgba(84, 84, 84, 0.48); // --color-border | --vt-c-divider-dark-2
+  --dp-menu-border-color: rgba(84, 84, 84, 0.48); // --color-border | --vt-c-divider-dark-2
+  --dp-border-color-hover: rgba(84, 84, 84, 0.65); // --color-border-hover | --vt-c-divider-dark-1
+}
